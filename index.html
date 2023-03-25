@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- CAlCULATOR -->
+
+        <div class="card-1" id="card-1">
+          <h2>BMI CALCULATOR</h2>
+          <p>Check your Body Mass Index</p>
+          <div class="flex">
+            <input
+              class="input"
+              id="height"
+              type="number"
+              placeholder="Enter Height (in cm)"
+            />
+            <input
+              class="input"
+              id="weight"
+              type="number"
+              placeholder="Enter Weight (in kg)"
+            />
+          </div>
+
+          <button class="btn" onclick="calculate()">CALCULATE BMI</button>
+        </div>
+
+        <!-- RESULT -->
+        <div class="card-2">
+          <p class="result" id="card2">Your BMI: <span id="result"></span></p>
+        </div>
+      </div>
+
+      <!-- BMI CATEGORIES -->
+      <div class="card-3">
+        <h2>BMI Categories</h2>
+        <div class="card-4">
+          <span class="bmi-categories bmi-categories-1"
+            ><strong>BMI</strong></span
+          >
+          <span class="bmi-categories bmi-categories-1"
+            ><strong>Weight Status</strong></span
+          >
+          <span class="bmi-categories">Below 18.5</span>
+          <span class="bmi-categories">Underweight</span>
+          <span class="bmi-categories">18.5-24.9</span>
+          <span class="bmi-categories">Healthy Weight</span>
+          <span class="bmi-categories">25-29.9</span>
+          <span class="bmi-categories">Overweight</span>
+          <span class="bmi-categories">30 & Above</span>
+          <span class="bmi-categories">Obesity</span>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
