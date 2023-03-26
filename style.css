@@ -109,4 +109,8 @@ p {
   .card-3 {
     margin-left: 14%;
   }
+  .card {
+    text-align: center;
+    font-smooth: 1;
+  }
 }
